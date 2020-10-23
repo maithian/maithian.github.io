@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1, shrink-to-fit=no">
+    <title>steelApp</title>
+    <link rel="stylesheet" href="css/export.css">
+</head>
+
+<body style="height:300px;width:450px">
+<div id="report">
+    <table style="width: 100%;">
+        <tbody>
+            <tr>
+                <td colspan="3" style="width: 99.8837%;">
+                    <p style="text-align: center;"><strong><span style="font-family: Arial,Helvetica,sans-serif;">VIỆN KỸ THUẬT C&Ocirc;NG TR&Igrave;NH X&Acirc;Y DỰNG, TRƯỜNG ĐẠI HỌC X&Acirc;Y DỰNG</span></strong></p>
+                    <p style="text-align: center;"><strong><span style="font-family: Arial,Helvetica,sans-serif;">PH&Ograve;NG TH&Iacute; NGHIỆM V&Agrave; KIỂM ĐỊNH C&Ocirc;NG TR&Igrave;NH LAS-XD.125</span></strong></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 19.8837%;">
+                    <div style="text-align: center;">Số: 00-00-A</div>
+                </td>
+                <td style="width: 62.093%;">
+                    <h4 style="text-align: center; word-wrap:normal"><strong>KẾT QUẢ THÍ NGHIỆM MẪU BÊ TÔNG KHOAN NGOÀI HIỆN TRƯỜNG</strong></h3>
+                </td>
+                <td style="width: 18.0233%; text-align: center;">
+                    <div style="text-align: center;">Ng&agrave;y th&iacute; nghiệm</div>
+                    <p>{{ngayThiNghiem}}</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br/>
+    <table class="no-border" style="width: 100%;">
+        <tbody>
+            <tr>
+                <td style="width: 24.186%; vertical-align: top;">Cơ quan y&ecirc;u cầu &nbsp; &nbsp;</td>
+                <td style="width: 75.6977%; vertical-align: top;">{{tenCoQuan}}</td>
+            </tr>
+            <tr>
+                <td style="width: 24.186%; vertical-align: top;">Dự &aacute;n &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                <td style="width: 75.6977%; vertical-align: top;">{{tenDuAn}}</td>
+            </tr>
+            <tr>
+                <td style="width: 24.186%; vertical-align: top;">Hạng mục &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                <td style="width: 75.6977%; vertical-align: top;">{{tenHangMuc}}</td>
+            </tr>
+            <tr>
+                <td style="width: 24.186%; vertical-align: top;">Địa điểm x&acirc;y dựng&nbsp;</td>
+                <td style="width: 75.6977%; vertical-align: top;">{{diaDiem}}</td>
+            </tr>
+            <tr>
+                <td style="width: 24.186%; vertical-align: top;">Chủng loại mẫu &nbsp; &nbsp; &nbsp;&nbsp;</td>
+                <td style="width: 75.6977%; vertical-align: top;">Mẫu trụ khoan tại hiện trường</td>
+            </tr>
+            <tr>
+                <td style="width: 24.186%; vertical-align: top;">Ngày đổ BT: </td>
+                <td style="width: 75.6977%; vertical-align: top;">{{ngayDoBT}}<span>Ngày lấy lõi: {{ngayLayLoi}}</span><span>Ngày ép mẫu: {{ngayEpMau}}</span></td>
+            </tr>
+            <tr>
+                <td style="width: 24.186%; vertical-align: top;">Phương ph&aacute;p TN</td>
+                <td style="width: 75.6977%; text-align: left; vertical-align: top;">
+                    Theo TCVN 3118:1993, TCXDVN 239:2006 <span> Mác thiết kế: {{macThietKe}}</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br/>
+    <table style="width: 100%;">
+        <tbody>
+            <tr>
+                <td rowspan="2" style="width: 5.4651%;">
+                    <div style="text-align: center;"><strong>STT</strong></div>
+                </td>
+                <td rowspan="2" style="width: 13.1395%;">
+                    <div style="text-align: center;"><strong>K&yacute; hiệu mẫu</strong></div>
+                </td>
+                <td rowspan="2" style="width: 19.0698%;">
+                    <div style="text-align: center;"><strong>Ng&agrave;y th&iacute; nghiệm</strong></div>
+                </td>
+                <td rowspan="2" style="width: 12.5581%;">
+                    <div style="text-align: center;"><strong>Tuổi BT</strong></div>
+                </td>
+                <td rowspan="2" style="width: 12.4419%;">
+                    <div style="text-align: center;"><strong>Lực n&eacute;n giới hạn (daN)</strong></div>
+                </td>
+                <td colspan="2" style="width: 24.4186%;">
+                    <div style="text-align: center;"><strong>Cường độ BT</strong></div>
+                    <div style="text-align: center;"><strong>(daN/cm2)</strong></div>
+                </td>
+                <td rowspan="2" style="width: 12.7907%;">
+                    <div style="text-align: center;"><strong>Đạt so với m&aacute;c TK</strong></div>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 12.5000%;">
+                    <div style="text-align: center;"><strong>Rn</strong></div>
+                </td>
+                <td style="width: 11.9767%;">
+                    <div style="text-align: center;"><strong>Rtb</strong></div>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 5.4651%;"><br></td>
+                <td style="width: 13.1395%;"><br></td>
+                <td style="width: 19.0698%;"><br></td>
+                <td style="width: 12.5000%;"><br></td>
+                <td style="width: 12.5000%;"><br></td>
+                <td style="width: 12.5000%;"><br></td>
+                <td style="width: 11.9767%;"><br></td>
+                <td style="width: 12.7907%;"><br></td>
+            </tr>
+        </tbody>
+    </table>
+    <br/>
+    <table class="no-border" style="width: 100%;">
+        <tbody>
+            <tr>
+                <td style="width: 16.66%; text-align: center;font-size:2vw;vertical-align: top;">TRƯỞNG PH&Ograve;NG TN&nbsp;</td>
+                <td style="width: 16.66%; text-align: center;font-size:2vw;vertical-align: top;">NGƯỜI TH&Iacute; NGHIỆM</td>
+                <td style="width: 16.66%; text-align: center;font-size:2vw;vertical-align: top;">VIỆN TRƯỞNG</td>
+                <td style="width: 16.66%; text-align: center;font-size:2vw;vertical-align: top;">CHỦ ĐẦU TƯ</td>
+                <td style="width: 16.66%; text-align: center;font-size:2vw;vertical-align: top;">TV GIÁM SÁT</td>
+                <td style="width: 16.66%; text-align: center;font-size:2vw;vertical-align: top;">NHÀ THẦU</td>
+            </tr>
+        </tbody>
+    </table>
+    <br/>
+    <br/>
+    <br/>
+</div>
+</body>
+
+</html>

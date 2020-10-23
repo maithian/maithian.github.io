@@ -1,0 +1,1469 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./img/bars-clblue.png" type="image/gif" sizes="16x16">
+    <title>steelApp</title>
+    <script src="./js/functions.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <button class="menubar collapse"><img src="./img/menubar-clwhite.png" class="menubar__img"
+                        alt=""></button>
+                <div class="menu_tinhtoan menu transition03s text-center  colllapse">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item"><a class="navbar-link menu_chiunen_bt d-block text-capitalize"
+                                href="#">Cường độ Chịu nén của Bê tông </a></li>
+                        <li class="nav-item"><a class="navbar-link menu_mau_bt_khoan d-block text-capitalize"
+                                href="#">Cường độ Mẫu Bê tông khoan trên công trường</a></li>
+                        <li class="nav-item"><a class="navbar-link menu_tn_sung d-block text-capitalize" href="#">Thí Nghiệm
+                                súng bật nảy kết hợp siêu âm Bê Tông</a></li>
+                        <li class="nav-item"><a class="navbar-link menu_tn_mauthep d-block text-capitalize" href="#">Thí Nghiệm
+                                phân loại MAC thép thanh</a></li>
+                    </ul>
+                    <button class="btn__close menu__close"></button>
+                </div>              
+            </nav>
+            <span class="header__title text-capitalize transition03s">trang chủ</span>
+        </div>
+    </header>
+    <main class="main">
+        <!-- Màn hình Trang chủ -->
+        <div class="container">
+            <div class="main_page trangchu wow fadeInLeft">
+                <div class="swiper-container d-block">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="trangchu__intro w-100 h-100">
+                                <img src="./img/trang chu/bgintro.png" class="swiper__img d-block img-fluid" alt="">
+                                <div class="trangchu__caption">
+                                    <h2 class="trangchu__title text-capitalize wow fadeInDown">đề tài</h2>
+                                    <p class="text-uppercase">"Xâ dựng phần mềm xử lý kết quả thí nghiệm và kiểm định
+                                        chất lượng vật liệu"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="./img/trang chu/img1.png"
+                                class="swiper__img d-block img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/trang chu/img3.png"
+                                class="swiper__img d-block img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/trang chu/img4.png"
+                                class="swiper__img d-block img-fluid" alt=""></div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination d-block"></div>
+                <div class="content">
+                    <p class="content__item text-uppercase">giáo viên hướng dẫn: <span class="content__name">TS. Nguyễn Thị
+                            Hải Như</span></p>
+                    <p class="content__item text-uppercase">sinh viên thực hiện: <span class="content__name">Mai Thị
+                            Ân</span></p>
+                    <p class="content__item text-uppercase">mssv: <span class="content__name">3025059</span></p>
+                    <p class="content__item text-uppercase">lớp: <span class="content__name">59TH2</span></p>
+                    <p class="content__item text-uppercase">sđt: <span class="content__name">0904508693</span></p>
+                </div>
+            </div>
+            <div class="main_page nhaplieu wow fadeInLeft collapse">
+                <button class="nhaplieu__standardbase transition03s float-right d-none"></button>
+                <span class="clearfloat"></span>
+            </div>
+            <div class="main_page tinhtoan collapse">
+                <h2 class="title text-capitalize wow fadeInLeft">Tính toán</h2>
+            </div>   
+
+            <!-- Module 1 Tính toán cường độ chịu nén của bê tông -->
+            <div class="main_page chiunen_bt collapse">
+                <!-- Module 1 Trang 1 -->
+                <div id="chiunen_bt_page_1">
+                    <h2 class="title text-capitalize wow fadeInLeft">Cường độ chịu nén Bê Tông</h2>
+                    <br><br />
+                    <div class="form__item w-100">
+                        <label for="#" class="form__label">Cơ quan yêu cầu</label>
+                        <input type="text" id="field_coquanyeucau" class="form-control" value="TRƯỜNG ĐẠI HỌC XÂY DỰNG">
+                    </div>
+                    <div class="form__item w-100">
+                        <label for="#" class="form__label">Dự án</label>
+                        <input type="text" id="field_duan" class="form-control" value="TÒA NHÀ H3">
+                    </div>
+                    <div class="form__item w-100">
+                        <label for="#" class="form__label">Hạng mục</label>
+                        <input type="text" id="field_hangmuc" class="form-control" value="SÀN TẦNG 2 NHÀ C2">
+                    </div>
+                    <div class="form__item w-100">
+                        <label for="#" class="form__label">Địa điểm xây dựng</label>
+                        <input type="text" id="field_diadiemxaydung" class="form-control"
+                            value="55 Giải Phóng, Hai Bà Trưng, Hà Nội">
+                    </div>
+                    <div class="form__item w-100">
+                        <label for="#" class="form__label">Cơ quan cấp mẫu</label>
+                        <input type="text" id="field_coquancapmau" class="form-control"
+                            value="Công ty cổ phần bê tông và xây dựng An Khánh">
+                    </div>
+
+                    <button type=" button" id="btn__next" class="btn text-capitalize mt-2 ml-2">Tiếp</button>
+
+                </div>
+                <!-- Module 1 Trang 2 -->
+                <div id="chiunen_bt_page_2" class="collapse">
+                    <div class="form__item w-100">
+                        <label for="#" class="form__label">Ký hiệu mẫu</label>
+                        <input type="text" id="field_kyhieumau" class="form-control" value="Bê tông Sàn">
+                    </div>
+                    <div class="form__item w-100">
+                        <label for="#" class="form__label">Ngày đúc</label>
+                        <input type="text" id="field_ngayduc" class="form-control" value="03/02/2020">
+                    </div>
+                    <div class="form__item w-100">
+                        <label for="#" class="form__label">Ngày thí nghiệm</label>
+                        <input type="text" id="field_ngaythinghiem" class="form-control" value="28/02/2020">
+                    </div>
+                    <div class="form__item w-100">
+                        <label for="#" class="form__label">Kích thước(<span>*</span>)</label>
+                        <input type="text" id="cbb_kich_thuoc" class="form-control select__input text-uppercase">
+                        <div class="select" id="list_kich_thuoc">
+                            <img src="./img/icons/angle-down-512.png" class="icon select__icon transition03s" alt="">
+                            <ul class="select__nav bg-danger transition03s">
+                                <li class="select__item text-uppercase">Mẫu lập phương: 100 x 100 x 100</li>
+                                <li class="select__item text-uppercase">Mẫu lập phương: 150 x 150 x 150</li>
+                                <li class="select__item text-uppercase">Mẫu lập phương: 200 x 200 x 200</li>
+                                <li class="select__item text-uppercase">Mẫu lập phương: 300 x 300 x 300</li>
+                                <li class="select__item text-uppercase">Mẫu hình trụ: 71.4 x 143</li>
+                                <li class="select__item text-uppercase">Mẫu hình trụ: 100 x 200</li>
+                                <li class="select__item text-uppercase">Mẫu hình trụ: 100 x 100</li>
+                                <li class="select__item text-uppercase">Mẫu hình trụ: 200 x 400</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form__item w-100 mrtop-10">
+                        <label for="#" class="form__label">Diện tích chịu nén (<span>F</span>)</label>
+                        <input type="text" id="txt__dientich" class="form-control">
+                    </div>
+                    <div class="form__item w-100 mrtop-10">
+                        <label for="#" class="form__label">Hệ số quy đổi (<span>&#945</span>)</label>
+                        <input type="text" id="txt__anpha" class="form-control">
+                    </div>
+                    <div class="d-flex">
+                        <div class="form__item w-100">
+                            <label for="#" class="form__label">Mác bê tông(<span>*</span>)</label>
+                            <input type="text" id="cbb__select__steel"
+                                class="form-control select__input text-uppercase">
+                            <div class="select">
+                                <img src="./img/icons/angle-down-512.png" class="icon select__icon transition03s"
+                                    alt="">
+                                <ul class="select__nav bg-danger transition03s">
+                                    <li class="select__item text-uppercase">B15</li>
+                                    <li class="select__item text-uppercase">B20</li>
+                                    <li class="select__item text-uppercase">B22.5</li>
+                                    <li class="select__item text-uppercase">B25</li>
+                                    <li class="select__item text-uppercase">B30</li>
+                                    <li class="select__item text-uppercase">B35</li>
+                                    <li class="select__item text-uppercase">B40</li>
+                                    <li class="select__item text-uppercase">B45</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form__item w-100">
+                            <label for="#" class="form__label">Mác thiết kế</label>
+                            <input type="text" id="field_macthietke" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="form__item w-50">
+                            <label for="#" class="form__label">P1 (<span>daN</span>)<span>*</span></label>
+                            <input type="text" id="txt__p1" class="form-control" value="74800">
+                        </div>
+                        <div class="form__item w-50">
+                            <label for="#" class="form__label">P2 (<span>daN</span>)<span>*</span></label>
+                            <input type="text" id="txt__p2" class="form-control" value="75400">
+                        </div>
+                        <div class="form__item w-50">
+                            <label for="#" class="form__label">P3 (<span>daN</span>)<span>*</span></label>
+                            <input type="text" id="txt__p3" class="form-control" value="77600">
+                        </div>
+                    </div>
+                    <button type="button" id="btn__back" class="btn text-capitalize mt-2 ml-2">Quay lại</button>
+                    <button type="button" id="btn__tinhtoan" class="btn text-capitalize mt-2 mr-2">Tính toán</button>
+
+                </div>
+                <!-- Module 1 Trang 3 -->
+                <div id="chiunen_bt_page_3" class="collapse">
+                    <h2 class="title text-capitalize wow fadeInLeft">Kết quả tính toán</h2>
+
+                    <form action="" class="form">
+                        <div class="tablewrap">
+                            <h3 class="title title__form wow fadeInLeft" data-wow-delay="0.3s"></h3>
+                            <table class="table w-100 text-center" id="table_ketqua">
+                                <tr>
+                                    <th class="table__header text-capitalize" rowspan="2">Ký hiệu mẫu</th>
+                                    <th class="table__header text-capitalize" colspan="3">Ngày thí nghiệm</th>
+                                    <th class="table__header text-capitalize" colspan="3">Diện tích (cm2)</th>
+                                    <th class="table__header text-capitalize" colspan="3">Lực nén giới hạn (daN/cm2)
+                                    </th>
+                                    <th class="table__header text-capitalize" colspan="3">Rn (daN/cm2)</th>
+                                    <th class="table__header text-capitalize" colspan="2">Rtb (daN/cm2)</th>
+                                    <th class="table__header text-capitalize" colspan="2">Đạt/Không Đạt</th>
+                                </tr>
+                                <tr class="thuy">
+                                </tr>
+                            </table>
+                        </div>
+                    </form>
+
+                    <button type="button" id="btn__export" class="btn text-capitalize mt-2 ml-2">Xuất</button>
+                    <button type="button" id="btn__them" class="btn text-capitalize mt-2 mr-2">Thêm</button>
+
+                </div>
+                <!-- Module 1 Export -->
+                <div id="chiunen_bt_export" class="collapse">
+                    <div id="main_report">
+                        <table style="width: 100%;">
+                            <tbody>
+                                <tr>
+                                    <td colspan="3" style="width: 99.8837%;">
+                                        <p style="text-align: center;"><strong><span
+                                                    style="font-family: Arial,Helvetica,sans-serif;">VIỆN KỸ THUẬT
+                                                    C&Ocirc;NG TR&Igrave;NH X&Acirc;Y DỰNG, TRƯỜNG ĐẠI HỌC X&Acirc;Y
+                                                    DỰNG</span></strong></p>
+                                        <p style="text-align: center;"><strong><span
+                                                    style="font-family: Arial,Helvetica,sans-serif;">PH&Ograve;NG
+                                                    TH&Iacute; NGHIỆM V&Agrave; KIỂM ĐỊNH C&Ocirc;NG TR&Igrave;NH
+                                                    LAS-XD.125</span></strong></p>
+                                        <p style="text-align: center;"><em>Địa chỉ: Ph&ograve;ng 105 Nh&agrave; C3 Đại
+                                                học B&aacute;ch Khoa H&agrave; Nội</em></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 19.8837%;">
+                                        <div style="text-align: center;">Số: 00-00-A</div>
+                                    </td>
+                                    <td style="width: 62.093%;">
+                                        <h3 style="text-align: center;font-size:4vw;font-weight: bold;">KẾT QUẢ
+                                            TH&Iacute; NGHIỆM <br />MẪU B&Ecirc; T&Ocirc;NG</h3>
+                                    </td>
+                                    <td style="width: 18.0233%; text-align: center;">
+                                        <div style="text-align: center;">Ng&agrave;y th&iacute; nghiệm</div>
+                                        <p id="ngayThiNghiem"></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br><br />
+                        <table class="no-border" style="width: 100%;">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 24.186%; vertical-align: top;">Cơ quan y&ecirc;u cầu:</td>
+                                    <td style="width: 75.6977%; vertical-align: top;">
+                                        <p id="tenCoQuan"></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 24.186%; vertical-align: top;">Dự &aacute;n:</td>
+                                    <td style="width: 75.6977%; vertical-align: top;">
+                                        <p id="tenDuAn"></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 24.186%; vertical-align: top;">Hạng mục:</td>
+                                    <td style="width: 75.6977%; vertical-align: top;">
+                                        <p id="tenHangMuc"></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 24.186%; vertical-align: top;">Địa điểm x&acirc;y dựng:</td>
+                                    <td style="width: 75.6977%; vertical-align: top;">
+                                        <p id="diaDiem"></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 24.186%; vertical-align: top;">Đơn vị cấp mẫu:</td>
+                                    <td style="width: 75.6977%; vertical-align: top;">
+                                        <p id="donViCapMau"></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 24.186%; vertical-align: top;">K&iacute;ch thước mẫu:</td>
+                                    <td style="width: 75.6977%; vertical-align: top;">
+                                        <p id="kichThuocMau"></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 24.186%; vertical-align: top;">M&aacute;c thiết kế :</td>
+                                    <td style="width: 75.6977%; vertical-align: top;">
+                                        <p id="macThietKe"></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 24.186%; vertical-align: top;">Phương ph&aacute;p TN:</td>
+                                    <td style="width: 75.6977%; text-align: left; vertical-align: top;">
+                                        Theo TCVN 3118:1993 - Phương ph&aacute;p đ&aacute;nh gi&aacute;: Theo TCVN
+                                        6025:1995
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 24.186%; vertical-align: top;">Thiết bị TN:</td>
+                                    <td style="width: 75.6977%; vertical-align: top;">
+                                        M&aacute;y n&eacute;n uống DHR2000 - Unit Test - Malaysia
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br />
+                        <table id="table_export" tyle="width: 100%;" class="table w-100 text-center">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 13.1395%;">
+                                        <div style="text-align: center;"><strong>K&yacute; hiệu mẫu</strong></div>
+                                    </td>
+                                    <td style="width: 19.0698%;">
+                                        <div style="text-align: center;"><strong>Ng&agrave;y th&iacute; nghiệm</strong>
+                                        </div>
+                                    </td>
+                                    <td style="width: 12.5581%;">
+                                        <div style="text-align: center;"><strong>Diện tích (cm)</strong></div>
+                                    </td>
+                                    <td style="width: 12.4419%;">
+                                        <div style="text-align: center;"><strong>Lực n&eacute;n giới hạn (daN)</strong>
+                                        </div>
+                                    </td>
+                                    <td style="width: 12.5000%;">
+                                        <div style="text-align: center;"><strong>Rn (daN/cm2)</strong></div>
+                                    </td>
+                                    <td style="width: 11.9767%;">
+                                        <div style="text-align: center;"><strong>Rtb (daN/cm2)</strong></div>
+                                    </td>
+                                    <td style="width: 12.7907%;">
+                                        <div style="text-align: center;"><strong>Đạt so với m&aacute;c TK</strong></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br />
+                        <table class="no-border" style="width: 100%;">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 25%; text-align: center;font-size:2vw;vertical-align: top;">
+                                        TRƯỞNG PH&Ograve;NG TN&nbsp;</td>
+                                    <td style="width: 25%; text-align: center;font-size:2vw;vertical-align: top;">
+                                        NGƯỜI TH&Iacute; NGHIỆM</td>
+                                    <td style="width: 25%; text-align: center;font-size:2vw;vertical-align: top;">
+                                        NGƯỜI KIỂM TRA</td>
+                                    <td style="width: 25%; text-align: center;font-size:2vw;vertical-align: top;">VIỆN
+                                        TRƯỞNG</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br />
+                        <br />
+                        <br />
+                    </div>
+                    <button type="button" id="btn__print" class="btn text-capitalize mt-2 mr-2">In Ấn </button>
+                    <button type="button" id="btn__print_back" class="btn text-capitalize mt-2 mr-2">Quay lại</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Module 2 Tính toán cường độ mẫu bê tông khoan trên công trường -->
+        <div class="main_page mau_bt_khoan collapse">
+            <!-- Module 2 Trang 1 -->
+            <div id="mau_bt_khoan_page_1">
+                <h2 class="title text-capitalize wow fadeInLeft">Thí Nghiệm Mẫu khoan Bê tông trên Công trường</h2>
+                <br><br />
+                <div class="form__item w-100">
+                    <label for="#" class="form__label">Cơ quan yêu cầu</label>
+                    <input type="text" id="field_coquanyeucau_khoan" class="form-control"
+                        value="CÔNG TY CỔ PHẦN XÂY DỰNG A">
+                </div>
+                <div class="form__item w-100">
+                    <label for="#" class="form__label">Dự án</label>
+                    <input type="text" id="field_duan_khoan" class="form-control" value="KHU NHÀ Ở">
+                </div>
+                <div class="form__item w-100">
+                    <label for="#" class="form__label">Hạng mục</label>
+                    <input type="text" id="field_hangmuc_khoan" class="form-control" value="TÒA NHÀ CT">
+                </div>
+                <div class="form__item w-100">
+                    <label for="#" class="form__label">Địa điểm xây dựng</label>
+                    <input type="text" id="field_diadiemxaydung_khoan" class="form-control" value="Hải Dương">
+                </div>
+                <div class="form__item w-100">
+                    <label for="#" class="form__label">Chủng loại mẫu</label>
+                    <input type="text" id="field_coquancapmau_khoan" class="form-control"
+                        value="Mẫu trụ khoan tại hiện trường">
+                </div>
+
+                <button type=" button" id="btn__tiep" class="btn text-capitalize mt-2 ml-2">Tiếp</button>
+            </div>
+            <!-- Module 2 Trang 2 -->
+            <div id="mau_bt_khoan_page_2" class="collapse">
+                <div class="form__item w-100">
+                    <label for="#" class="form__label">Ngày lấy lõi</label>
+                    <input type="text" id="field__ngaylayloi_khoan" class="form-control" value="10/09/2020">
+                </div>
+                <div class="form__item w-100 mrtop-10">
+                    <label for="#" class="form__label">Ngày ép mẫu </label>
+                    <input type="text" id="field__ngayepmau_khoan" class="form-control" value="10/10/2020">
+                </div>
+                <div class="form__item w-100">
+                    <label for="#" class="form__label">Mác thiết kế(<span>*</span>)</label>
+                    <input type="text" id="cbb_mac_tk" class="form-control select__input text-uppercase">
+                    <div class="select" id="field_macthietke_khoan">
+                        <img src="./img/icons/angle-down-512.png" class="icon select__icon transition03s" alt="">
+                        <ul class="select__nav bg-danger transition03s">
+                            <li class="select__item text-uppercase">200</li>
+                            <li class="select__item text-uppercase">250</li>
+                            <li class="select__item text-uppercase">300</li>
+                            <li class="select__item text-uppercase">350</li>
+                            <li class="select__item text-uppercase">400</li>
+                            <li class="select__item text-uppercase">450</li>
+                            <li class="select__item text-uppercase">500</li>
+                            <li class="select__item text-uppercase">600</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form__item w-100 mrtop-10">
+                    <label for="#" class="form__label">Cấu kiện kiểm tra </label>
+                    <input type="text" id="txt__cau_kien_kiem_tra" class="form-control" value="Cột">
+                </div>
+                <h3 class="title title__form text-capitalize mrtop-10">Kích thước mẫu khoan(<span>*</span>)</h3>
+                <div class="d-flex">
+                    <div class="form__item w-100 mrtop-10">
+                        <label for="#" class="form__label">D (<span>mm</span>)</label>
+                        <input type="text" id="txt__D" class="form-control" value="68">
+                    </div>
+                    <div class="form__item w-100 mrtop-10">
+                        <label for="#" class="form__label">H (<span>mm</span>)</label>
+                        <input type="text" id="txt__H" class="form-control" value="106">
+                    </div>
+
+                </div>
+                <h3 class="title title__form text-capitalize mrtop-10">Thông số cốt thép trong mẫu khoan(<span>*</span>)
+                </h3>
+
+                <div class="d-flex">
+                    <div class="form__item w-50">
+                        <label for="#" class="form__label">dt1 (<span>mm</span>)</label>
+                        <input type="text" id="txt__dt1" class="form-control" value="66">
+                    </div>
+                    <div class="form__item w-50">
+                        <label for="#" class="form__label">a1 (<span>mm</span>)</label>
+                        <input type="text" id="txt__a1" class="form-control" value="20">
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="form__item w-50">
+                        <label for="#" class="form__label">dt2 (<span>mm</span>)</label>
+                        <input type="text" id="txt__dt2" class="form-control" value="68">
+                    </div>
+                    <div class="form__item w-50">
+                        <label for="#" class="form__label">a2 (<span>mm</span>)</label>
+                        <input type="text" id="txt__a2" class="form-control" value="38">
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="form__item w-50">
+                        <label for="#" class="form__label">Phương khoan(<span>*</span>)</label>
+                        <input type="text" id="cbb_phuong_khoan" class="form-control select__input text-uppercase">
+                        <div class="select" id="list_phuong_khoan">
+                            <img src="./img/icons/angle-down-512.png" class="icon select__icon transition03s" alt="">
+                            <ul class="select__nav bg-danger transition03s">
+                                <li class="select__item text-uppercase">Vuông góc</li>
+                                <li class="select__item text-uppercase">Song song</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form__item w-50">
+                        <label for="#" class="form__label">Hệ số phương khoan </label>
+                        <input type="text" id="txt__he_so_phuong_khoan" class="form-control" value="">
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="form__item w-50">
+                        <label for="#" class="form__label">Hệ số cốt thép(<span>*</span>)</label>
+                        <input type="text" id="cbb_he_so_cot_thep" class="form-control select__input text-uppercase">
+                        <div class="select" id="list_he_so_cot_thep">
+                            <img src="./img/icons/angle-down-512.png" class="icon select__icon transition03s" alt="">
+                            <ul class="select__nav bg-danger transition03s">
+                                <li class="select__item text-uppercase">0 cốt thép</li>
+                                <li class="select__item text-uppercase">1 thanh cốt thép</li>
+                                <li class="select__item text-uppercase">2 thanh cốt thép</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="form__item w-50">
+                        <label for="#" class="form__label">Hệ số chuyển đổi </label>
+                        <input type="text" id="txt__he_so_chuyen_doi" class="form-control" value="">
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="form__item w-100 mrtop-10">
+                        <label for="#" class="form__label">Diện tích chịu lực (<span>mm2</span>)</label>
+                        <input type="text" id="txt__f" class="form-control">
+                    </div>
+                    <div class="form__item w-100 mrtop-10">
+                        <label for="#" class="form__label">Lực phá hoại (<span>N</span>)(<span>*</span>)</label>
+                        <input type="text" id="txt__p" class="form-control" value="94700">
+                    </div>
+                </div>
+
+                <button type="button" id="btn__quaylai" class="btn text-capitalize mt-2 ml-2">Quay lại</button>
+                <button type="button" id="btn__tinh" class="btn text-capitalize mt-2 mr-2">Tính toán</button>
+            </div>
+            <!-- Module 2 Trang 3 -->
+            <div id="mau_bt_khoan_page_3" class="collapse">
+                <h2 class="title text-capitalize wow fadeInLeft">Kết quả tính toán</h2>
+
+                <form action="" class="form">
+                    <div class="tablewrap">
+                        <h3 class="title title__form wow fadeInLeft" data-wow-delay="0.3s"></h3>
+                        <table class="table w-100 text-center" id="kqua_2">
+                            <tr>
+                                <th class="table__header text-capitalize" rowspan="2" clospan="4">STT</th>
+                                <th class="table__header text-capitalize" colspan="1">Cấu kiện kiểm tra</th>
+                                <th class="table__header text-capitalize" colspan="1">Phương khoan</th>
+                                <th class="table__header text-capitalize" colspan="1">Diện tích chịu lực (mm2)</th>
+                                <th class="table__header text-capitalize" colspan="1">Lực phá hoại (N)</th>
+                                <th class="table__header text-capitalize" colspan="1">Cường độ mẫu khoan (N/mm2)</th>
+                                <!-- <th class="table__header text-capitalize" colspan="8">Cường độ hiện trường từng mẫu</th> -->
+                                <th class="table__header text-capitalize" colspan="1">Hệ số phương khoan</th>
+                                <th class="table__header text-capitalize" colspan="1">Hệ số chuyển đổi</th>
+                                <th class="table__header text-capitalize" colspan="1">Rht (N/mm2)</th>
+                                <th class="table__header text-capitalize" colspan="1">Cường độ hiện trường trung bình
+                                    (N/mm2)
+                                </th>
+                                <th class="table__header text-capitalize" colspan="1">Kết quả</th>
+                            </tr>
+
+                            <tr class="thuy">
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+
+                <button type="button" id="btn__export__khoan" class="btn text-capitalize mt-2 ml-2">Xuất</button>
+                <button type="button" id="btn__themmoi" class="btn text-capitalize mt-2 mr-2">Thêm</button>
+
+            </div>
+            <!-- Module 2 Export -->
+            <div id="bt_khoan_export" class="collapse">
+                <div id="main_report_khoan">
+                    <table style="width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td colspan="3" style="width: 99.8837%;">
+                                    <p style="text-align: center;"><strong><span
+                                                style="font-family: Arial,Helvetica,sans-serif;">VIỆN KỸ THUẬT
+                                                C&Ocirc;NG TR&Igrave;NH X&Acirc;Y DỰNG, TRƯỜNG ĐẠI HỌC X&Acirc;Y
+                                                DỰNG</span></strong></p>
+                                    <p style="text-align: center;"><strong><span
+                                                style="font-family: Arial,Helvetica,sans-serif;">PH&Ograve;NG TH&Iacute;
+                                                NGHIỆM V&Agrave; KIỂM ĐỊNH C&Ocirc;NG TR&Igrave;NH
+                                                LAS-XD.125</span></strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 19.8837%;">
+                                    <div style="text-align: center;">Số: 00-00-A</div>
+                                </td>
+                                <td style="width: 62.093%;">
+                                    <h4 style="text-align: center; word-wrap:normal;font-size: 3vw"><strong>KẾT QUẢ THÍ
+                                            NGHIỆM MẪU BÊ TÔNG KHOAN NGOÀI HIỆN TRƯỜNG</strong></h3>
+                                </td>
+                                <td style="width: 18.0233%; text-align: center;">
+                                    <div style="text-align: center;">Ng&agrave;y th&iacute; nghiệm</div>
+                                    <p id="ngayThiNghiem_khoan"></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br><br />
+                    <table class="no-border" style="width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td style="width: 24.186%; vertical-align: top;">Cơ quan y&ecirc;u cầu &nbsp; &nbsp;
+                                </td>
+                                <td style="width: 75.6977%; vertical-align: top;">
+                                    <p id="tenCoQuan_khoan"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 24.186%; vertical-align: top;">Dự &aacute;n &nbsp; &nbsp; &nbsp;
+                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                                <td style="width: 75.6977%; vertical-align: top;">
+                                    <p id="tenDuAn_khoan"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 24.186%; vertical-align: top;">Hạng mục &nbsp; &nbsp; &nbsp; &nbsp;
+                                    &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                                <td style="width: 75.6977%; vertical-align: top;">
+                                    <p id="tenHangMuc_khoan"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 24.186%; vertical-align: top;">Địa điểm x&acirc;y dựng&nbsp;</td>
+                                <td style="width: 75.6977%; vertical-align: top;">
+                                    <p id="diaDiem_khoan"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 24.186%; vertical-align: top;">Chủng loại mẫu &nbsp; &nbsp;
+                                    &nbsp;&nbsp;</td>
+                                <td style="width: 75.6977%; vertical-align: top;">Mẫu trụ khoan tại hiện trường</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 24.186%; vertical-align: top;">Ngày đổ BT: </td>
+                                <td style="width: 75.6977%; vertical-align: top;"><span
+                                        id="ngayDoBT_khoan"></span><span>Ngày lấy lõi: <span
+                                            id="ngayLayLoi_khoan"></span><span style="padding-left: 10vw">Ngày ép mẫu:
+                                            <span id="ngayEpMau_khoan"></p></span></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 24.186%; vertical-align: top;">Phương ph&aacute;p TN</td>
+                                <td style="width: 75.6977%; text-align: left; vertical-align: top;">
+                                    Theo TCVN 3118:1993, TCXDVN 239:2006 <span> Mác thiết kế: <p id="macThietKe_khoan">
+                                        </p></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br />
+                    <table id="table_export_khoan" style="width: 100%;" class="table w-100 text-center">
+                        <tbody>
+                            <tr>
+                                <th class="table__header text-capitalize" rowspan="2" clospan="4">STT</th>
+                                <th class="table__header text-capitalize" colspan="1">Cấu<br/>kiện<br/>kiểm<br/>tra</th>
+                                <th class="table__header text-capitalize" colspan="1">Phương<br/>khoan</th>
+                                <th class="table__header text-capitalize" colspan="1">Diện<br/>tích<br/>chịu<br/>lực<br/>(mm2)</th>
+                                <th class="table__header text-capitalize" colspan="1">Lực<br/>phá<br/>hoại<br/>(N)</th>
+                                <th class="table__header text-capitalize" colspan="1">Cường<br/>độ<br/>mẫu<br/>khoan<br/>(N/mm2)</th>
+                                <!-- <th class="table__header text-capitalize" colspan="8">Cường độ hiện trường từng mẫu</th> -->
+                                <th class="table__header text-capitalize" colspan="1">Hệ<br/>số<br/>phương<br/>khoan</th>
+                                <th class="table__header text-capitalize" colspan="1">Hệ<br/>số<br/>chuyển<br/>đổi</th>
+                                <th class="table__header text-capitalize" colspan="1">Rht<br/>(N/mm2)</th>
+                                <th class="table__header text-capitalize" colspan="1">Cường<br/>độ<br/>hiện<br/>trường<br/>trung<br/>bình<br/>(N/mm2)</th>
+                                <th class="table__header text-capitalize" colspan="1">Kết<br/>quả</th>
+                            </tr>
+
+                            <tr class="thuy">
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br />
+                    <table class="no-border" style="width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td style="width: 16.66%; text-align: center;font-size:2vw;vertical-align: top;">TRƯỞNG
+                                    PH&Ograve;NG TN&nbsp;</td>
+                                <td style="width: 16.66%; text-align: center;font-size:2vw;vertical-align: top;">NGƯỜI
+                                    TH&Iacute; NGHIỆM</td>
+                                <td style="width: 16.66%; text-align: center;font-size:2vw;vertical-align: top;">VIỆN
+                                    TRƯỞNG</td>
+                                <td style="width: 16.66%; text-align: center;font-size:2vw;vertical-align: top;">CHỦ ĐẦU
+                                    TƯ</td>
+                                <td style="width: 16.66%; text-align: center;font-size:2vw;vertical-align: top;">TV GIÁM
+                                    SÁT</td>
+                                <td style="width: 16.66%; text-align: center;font-size:2vw;vertical-align: top;">NHÀ
+                                    THẦU</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br />
+                    <br />
+                    <br />
+
+                </div>
+                <div>
+                    <button type="button" id="btn__print_khoan" class="btn text-capitalize mt-2 mr-2">In Ấn</button>
+                    <button type="button" id="btn__print_back_khoan" class="btn text-capitalize mt-2 mr-2">Quay
+                        lại</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Module 3 Thí nghiệm súng bật nảy kết hợp siêu âm bê tông -->
+        <div class="main_page tn_sung collapse">
+            <!-- Module 3 Trang 1 -->
+            <div id="tn_sung_page_1">
+                <h2 class="title text-capitalize wow fadeInLeft">TN Súng kết hợp siêu âm Bê tông</h2>
+                <br><br />
+                <div class="form__item w-100">
+                    <label for="#" class="form__label">Cơ quan yêu cầu</label>
+                    <input type="text" id="field_coquanyeucau_sung" class="form-control"
+                        value="TRƯỜNG ĐẠI HỌC XÂY DỰNG">
+                </div>
+                <div class="form__item w-100">
+                    <label for="#" class="form__label">Dự án</label>
+                    <input type="text" id="field_duan_sung" class="form-control" value="TÒA NHÀ H3">
+                </div>
+                <div class="form__item w-100">
+                    <label for="#" class="form__label">Hạng mục</label>
+                    <input type="text" id="field_hangmuc_sung" class="form-control" value="Sàn tầng 2 nhà C2">
+                </div>
+                <div class="form__item w-100">
+                    <label for="#" class="form__label">Địa điểm xây dựng</label>
+                    <input type="text" id="field_diadiemxaydung_sung" class="form-control"
+                        value="55 Giải Phóng, Hai Bà Trưng, Hà Nội">
+                </div>
+
+                <button type=" button" id="btn__tieptheo" class="btn text-capitalize mt-2 ml-2">Tiếp</button>
+
+            </div>
+            <!-- Module 3 Trang 2 -->
+            <div id="tn_sung_page_2" class="collapse">
+                <div class="form__item w-100">
+                    <label for="#" class="form__label">Loại cấu kiện(<span>*</span>)</label>
+                    <input type="text" id="cbb_loai_cau_kien" class="form-control select__input text-uppercase">
+                    <div class="select" id="list_cau_kien">
+                        <img src="./img/icons/angle-down-512.png" class="icon select__icon transition03s" alt="">
+                        <ul class="select__nav bg-danger transition03s">
+                            <li class="select__item text-uppercase">Cột</li>
+                            <li class="select__item text-uppercase">Dầm</li>
+                            <li class="select__item text-uppercase">Sàn</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <div class="form__item w-25">
+                        <label for="#" class="form__label">Hệ số C1(<span>*</span>)</label>
+                        <input type="text" id="cbb_c1" class="form-control select__input text-uppercase">
+                        <div class="select" id="list_c1">
+                            <img src="./img/icons/angle-down-512.png" class="icon select__icon transition03s" alt="">
+                            <ul class="select__nav bg-danger transition03s">
+                                <li class="select__item text-uppercase">PC30</li>
+                                <li class="select__item text-uppercase">PC40</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="form__item w-25">
+                        <label for="#" class="form__label">Hệ số C2(<span>*</span>)</label>
+                        <input type="text" id="cbb_c2" class="form-control select__input text-uppercase">
+                        <div class="select" id="list_c2">
+                            <img src="./img/icons/angle-down-512.png" class="icon select__icon transition03s" alt="">
+                            <ul class="select__nav bg-danger transition03s">
+                                <li class="select__item text-uppercase">250</li>
+                                <li class="select__item text-uppercase">300</li>
+                                <li class="select__item text-uppercase">350</li>
+                                <li class="select__item text-uppercase">400</li>
+                                <li class="select__item text-uppercase">450</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="form__item w-25">
+                        <label for="#" class="form__label">Hệ số C3(<span>*</span>)</label>
+                        <input type="text" id="cbb_c3" class="form-control select__input text-uppercase">
+                        <div class="select" id="list_c3">
+                            <img src="./img/icons/angle-down-512.png" class="icon select__icon transition03s" alt="">
+                            <ul class="select__nav bg-danger transition03s">
+                                <li class="select__item text-uppercase">Đá dăm (vc&lt;=4400)</li>
+                                <li class="select__item text-uppercase">Đá dăm (vc>=4400)</li>
+                                <li class="select__item text-uppercase">Đá sỏi (vc&lt;=4400)</li>
+                                <li class="select__item text-uppercase">Đá sỏi (vc>=4400)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="form__item w-25">
+                        <label for="#" class="form__label">Hệ số C4(<span>*</span>)</label>
+                        <input type="text" id="cbb_c4" class="form-control select__input text-uppercase">
+                        <div class="select" id="list_c4">
+                            <img src="./img/icons/angle-down-512.png" class="icon select__icon transition03s" alt="">
+                            <ul class="select__nav bg-danger transition03s">
+                                <li class="select__item text-uppercase">20</li>
+                                <li class="select__item text-uppercase">40</li>
+                                <li class="select__item text-uppercase">70</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="form__item w-100">
+                            <label for="#" class="form__label">STT</label>
+                            <input type="text" id="txt_STT" class="form-control">
+                        </div> -->
+                <div class="form__item w-100">
+                    <label for="#" class="form__label">Tầng</label>
+                    <input type="text" id="txt_tang" class="form-control" value="1">
+                </div>
+                <div class="form__item w-100">
+                    <label for="#" class="form__label">Tên cấu kiện</label>
+                    <input type="text" id="txt_tencaukiensung" class="form-control" value="Cột trục 1 tầng 1">
+                </div>
+                <div class="form__item w-100">
+                    <label for="#" class="form__label">Vị trí</label>
+                    <input type="text" id="txt_vitri" class="form-control" value="1">
+                </div>
+                <!-- <div class="form__item w-100">
+                            <label for="#" class="form__label">R<sub>0</sub></label>
+                            <input type="text" id="txt_r0" class="form-control">
+                        </div> -->
+                <!-- <div class="form__item w-100">
+                            <label for="#" class="form__label">T<sub>α</sub></label>
+                            <input type="text" id="txt_t_alpha" class="form-control">
+                        </div> -->
+                <!-- <div class="form__item w-100">
+                            <label for="#" class="form__label">R<sub>yc</sub></label>
+                            <input type="text" id="txt_ryc" class="form-control">
+                        </div> -->
+                <!-- <div class="select" id="txt_ryc">
+                            <img src="./img/icons/angle-down-512.png" class="icon select__icon transition03s"
+                                alt="">
+                            <ul class="select__nav bg-danger transition03s">
+                                <li class="select__item text-uppercase">B15</li>
+                                <li class="select__item text-uppercase">B20</li>
+                                <li class="select__item text-uppercase">B22.5</li>
+                                <li class="select__item text-uppercase">B25</li>
+                                <li class="select__item text-uppercase">B30</li>
+                                <li class="select__item text-uppercase">B35</li>
+                                <li class="select__item text-uppercase">B40</li>
+                                <li class="select__item text-uppercase">B45</li>                                   
+                            </ul>
+                        </div> -->
+                <div class="form__item w-100">
+                    <label for="#" class="form__label">R<sub>yc</sub>(<span>*</span>)</label>
+                    <input type="text" id="txt_ryc" class="form-control select__input text-uppercase">
+                    <div class="select" id="txt_ryc">
+                        <img src="./img/icons/angle-down-512.png" class="icon select__icon transition03s" alt="">
+                        <ul class="select__nav bg-danger transition03s">
+                            <li class="select__item text-uppercase">15</li>
+                            <li class="select__item text-uppercase">20</li>
+                            <li class="select__item text-uppercase">22.5</li>
+                            <li class="select__item text-uppercase">25</li>
+                            <li class="select__item text-uppercase">30</li>
+                            <li class="select__item text-uppercase">35</li>
+                            <li class="select__item text-uppercase">40</li>
+                            <li class="select__item text-uppercase">45</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 class="title title__form text-capitalize">Trị số bật nảy (vạch)</h3>
+                <div class="form__wrap d-flex flex-wrap">
+                    <div class="d-flex">
+                        <div class="form__item w-100">
+                            <label for="#" class="form__label">N1(<span>*</span>)</label>
+                            <input type="text" id="txt_n1" class="form-control" value="29">
+                        </div>
+                        <div class="form__item w-100">
+                            <label for="#" class="form__label">N2(<span>*</span>)</label>
+                            <input type="text" id="txt_n2" class="form-control" value="30">
+                        </div>
+                        <div class="form__item w-100">
+                            <label for="#" class="form__label">N3(<span>*</span>)</label>
+                            <input type="text" id="txt_n3" class="form-control" value="30">
+                        </div>
+                        <div class="form__item w-100">
+                            <label for="#" class="form__label">N4(<span>*</span>)</label>
+                            <input type="text" id="txt_n4" class="form-control" value="31">
+                        </div>
+                        <div class="form__item w-100">
+                            <label for="#" class="form__label">N5(<span>*</span>)</label>
+                            <input type="text" id="txt_n5" class="form-control" value="32">
+                        </div>
+                        <div class="form__item w-100">
+                            <label for="#" class="form__label">Ntb</label>
+                            <input type="text" id="txt_ntb" class="form-control">
+                        </div>
+
+                    </div>
+                </div>
+
+                <h3 class="title title__form text-capitalize">kết quả siêu âm (m/s)</h3>
+                <div class="form__wrap d-flex flex-wrap">
+                    <div class="d-flex">
+                        <div class="form__item w-100">
+                            <label for="#" class="form__label">V1(<span>*</span>)</label>
+                            <input type="text" id="txt_v1" class="form-control" value="3851">
+                        </div>
+                        <div class="form__item w-100">
+                            <label for="#" class="form__label">V2(<span>*</span>)</label>
+                            <input type="text" id="txt_v2" class="form-control" value="3909">
+                        </div>
+                        <div class="form__item w-100">
+                            <label for="#" class="form__label">Vtb</label>
+                            <input type="text" id="txt_vtb" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" id="btn__trolai" class="btn text-capitalize mt-2 ml-2">Quay lại</button>
+                <button type="button" id="btn__tinhtoan_sung" class="btn text-capitalize mt-2 mr-2">Tính toán</button>
+
+            </div>
+            <!-- Module 3 Trang 3 -->
+            <div id="tn_sung_page_3" class="collapse">
+                <h2 class="title text-capitalize wow fadeInLeft">Kết quả tính toán</h2>
+
+                <form action="" class="form">
+                    <div class="tablewrap">
+                        <h3 class="title title__form text-capitalize">Bảng 1</h3>
+
+                        <table class="table w-100 text-center" id="table_bang1_sung">
+                            <thead>
+                                <tr>
+                                    <th rowspan="2">Tầng</th>
+                                    <th rowspan="2">Tên cấu kiện</th>
+                                    <th rowspan="2">Vị trí</th>
+                                    <th colspan="6">Trị số bật nảy (vạch)</th>
+                                    <th colspan="3">Kết quả siêu âm (m/s)</th>
+                                    <th colspan="2">Cường độ (MPa)</th>
+                                </tr>
+                                <tr>
+                                    <th>N1</th>
+                                    <th>N2</th>
+                                    <th>N3</th>
+                                    <th>N4</th>
+                                    <th>N5</th>
+                                    <th>Ntb</th>
+                                    <th>V1</th>
+                                    <th>V2</th>
+                                    <th>Vtb</th>
+                                    <th>Rhti</th>
+                                    <th>Rhttb</th>
+
+                                </tr>
+                            </thead>
+                            <!-- <tbody>
+                                      <tr>
+                                        <td>data1</td>
+                                        <td>data2</td>
+                                        <td>data3</td>
+                                        <td>data4</td>
+                                      </tr>
+                                    </tbody> -->
+                        </table>
+
+
+                        <tr class="thuy"></tr>
+                        </table>
+                    </div>
+                </form>
+
+
+                <form action="" class="form">
+                    <div class="tablewrap">
+                        <h3 class="title title__form text-capitalize">Bảng 2</h3>
+
+                        <table class="table w-100 text-center" id="table_bang2_sung">
+                            <thead>
+                                <tr>
+                                    <th>Tầng</th>
+                                    <th>Loại cấu kiện</th>
+                                    <th>Tα </th>
+                                    <th>Rhttb</th>
+                                    <th>vht</th>
+                                    <th>Rht</th>
+                                    <th>Rht/0.9</th>
+                                    <th>Bê tông đạt cấp độ bền B</th>
+                                    <th>Đạt yêu cầu</th>
+                                </tr>
+                            </thead>
+
+                        </table>
+
+
+                        <tr class="thuy"></tr>
+                        </table>
+                    </div>
+                </form>
+
+                <button type="button" id="btn__export__sung" class="btn text-capitalize mt-2 ml-2">Xuất </button>
+                <button type="button" id="btn__themmoi_sung" class="btn text-capitalize mt-2 mr-2">Thêm</button>
+
+            </div>
+            <!-- Module 3 Export -->
+            <div id="tn_sung_export" class="collapse">
+                <div id="main_report_sung">
+                    <table style="width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td colspan="3" style="width: 99.8837%;">
+                                    <p style="text-align: center;"><strong><span
+                                                style="font-family: Arial,Helvetica,sans-serif;">VIỆN KỸ THUẬT
+                                                C&Ocirc;NG TR&Igrave;NH X&Acirc;Y DỰNG, TRƯỜNG ĐẠI HỌC X&Acirc;Y
+                                                DỰNG</span></strong></p>
+                                    <p style="text-align: center;"><strong><span
+                                                style="font-family: Arial,Helvetica,sans-serif;">PH&Ograve;NG TH&Iacute;
+                                                NGHIỆM V&Agrave; KIỂM ĐỊNH C&Ocirc;NG TR&Igrave;NH
+                                                LAS-XD.125</span></strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 19.8837%;">
+                                    <div style="text-align: center;">Số: 00-00-A</div>
+                                </td>
+                                <td style="width: 62.093%;">
+                                    <h4 style="text-align: center; word-wrap:normal"><strong>KẾT QUẢ THÍ NGHIỆM SÚNG KẾT
+                                            HỢP SIÊU ÂM BÊ TÔNG</strong></h3>
+                                </td>
+                                <td style="width: 18.0233%; text-align: center;">
+                                    <div style="text-align: center;">Ng&agrave;y th&iacute; nghiệm</div>
+                                    <p id="ngayThiNghiem_sung"></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br><br />
+                    <table class="no-border" style="width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td style="width: 24.186%; vertical-align: top;">Cơ quan y&ecirc;u cầu &nbsp; &nbsp;
+                                </td>
+                                <td style="width: 75.6977%; vertical-align: top;"><span id="tenCoQuan_sung"></span></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 24.186%; vertical-align: top;">Dự &aacute;n &nbsp; &nbsp; &nbsp;
+                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                                <td style="width: 75.6977%; vertical-align: top;"><span id="tenDuAn_sung"></span></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 24.186%; vertical-align: top;">Hạng mục &nbsp; &nbsp; &nbsp; &nbsp;
+                                    &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                                <td style="width: 75.6977%; vertical-align: top;"><span id="tenHangMuc_sung"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 24.186%; vertical-align: top;">Địa điểm x&acirc;y dựng&nbsp;</td>
+                                <td style="width: 75.6977%; vertical-align: top;"><span id="diaDiem_sung"></span></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 24.186%; vertical-align: top;">Yêu cầu thí nghiệm</td>
+                                <td style="width: 75.6977%; vertical-align: top;">Xác định cường độ bê tông hiện trường
+                                    bằng PPTN không phá hủy</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 24.186%; vertical-align: top;">Phương ph&aacute;p TN</td>
+                                <td style="width: 75.6977%; text-align: left; vertical-align: top;">
+                                    Theo TCVN 9335:2012, TCXDVN 239:2006 <span> Ngày thí nghiệm:</span><span
+                                        id="ngayThiNghiem_sung"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 24.186%; vertical-align: top;">Thiết bị TN &nbsp; &nbsp; &nbsp; &nbsp;
+                                    &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                                <td style="width: 75.6977%; vertical-align: top;">
+                                    Súng bật nảy SMICHDT do hãng Proceq sản xuất và máy siêu âm bê tông nhãn hiệu TICO
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 24.186%; vertical-align: top;">Kết luận cấp độ bền</td>
+                                <td style="width: 75.6977%; vertical-align: top;">
+                                    TCXDVN 239:2006
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br />
+                    <div>Bảng 1. Bảng tính cường độ bê tông trung bình của các cấu kiện</div>
+                    <table id="table_export_sung_1" style="width: 100%;" class="table w-100 text-center">
+                        <tbody>
+                            <thead>
+                                <tr>
+                                    <th rowspan="2">Tầng</th>
+                                    <th rowspan="2">Tên cấu kiện</th>
+                                    <th rowspan="2">Vị trí</th>
+                                    <th colspan="6">Trị số bật nảy (vạch)</th>
+                                    <th colspan="3">Kết quả siêu âm (m/s)</th>
+                                    <th colspan="2">Cường độ (Mpa)</th>
+                                </tr>
+                                <tr>
+                                    <th>N1</th>
+                                    <th>N2</th>
+                                    <th>N3</th>
+                                    <th>N4</th>
+                                    <th>N5</th>
+                                    <th>Ntb</th>
+                                    <th>V1</th>
+                                    <th>V2</th>
+                                    <th>Vtb</th>
+                                    <th>Rhti</th>
+                                    <th>Rhttb</th>
+
+                                </tr>
+                            </thead>
+                        </tbody>
+                    </table>
+                    <br />
+                    <br />
+                    <div>Bảng 2. Bảng tính cường độ bê tông trung bình của các cấu kiện</div>
+                    <table id="table_export_sung_2" style="width: 100%;" class="table w-100 text-center">
+                        <tbody>
+                            <thead>
+                                <tr>
+                                    <th>Tầng</th>
+                                    <th>Loại cấu kiện</th>
+                                    <th>Tα </th>
+                                    <th>Rhttb</th>
+                                    <th>vht</th>
+                                    <th>Rht</th>
+                                    <th>Rht/0.9</th>
+                                    <th>Bê tông đạt cấp độ bền B</th>
+                                    <th>Đạt yêu cầu</th>
+                                </tr>
+                            </thead>
+                        </tbody>
+                    </table>
+                    <br />
+                    <table class="no-border" style="width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td style="width: 25%; text-align: center;font-size:2vw;vertical-align: top;">TRƯỞNG
+                                    PH&Ograve;NG TN&nbsp;</td>
+                                <td style="width: 25%; text-align: center;font-size:2vw;vertical-align: top;">NGƯỜI
+                                    TH&Iacute; NGHIỆM</td>
+                                <td style="width: 25%; text-align: center;font-size:2vw;vertical-align: top;">NGƯỜI KIỂM
+                                    TRA</td>
+                                <td style="width: 25%; text-align: center;font-size:2vw;vertical-align: top;">VIỆN
+                                    TRƯỞNG</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br />
+                    <br />
+                    <br />
+                </div>
+                <div>
+                    <button type="button" id="btn__print_sung" class="btn text-capitalize mt-2 mr-2">In Ấn</button>
+                    <button type="button" id="btn__print_back_sung" class="btn text-capitalize mt-2 mr-2">Quay
+                        lại</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Module 4 Thí nghiệm phân loại MAC thép thanh -->
+        <div class="main_page tn_mauthep collapse">
+            <!-- Module 4 Trang 1 -->
+            <div id="tn_mauthep_page_1">
+                <h2 class="title text-capitalize wow fadeInLeft">Thí Nghiệm Mẫu thép thanh</h2>
+                <br><br />
+                <div class="form__item w-100">
+                    <label for="#" class="form__label">Số</label>0514-T">
+                    <input type="text" id="txt_so_mac" class="form-control" value="0514-T">
+                </div>
+                <div class="form__item w-100">
+                    <label for="#" class="form__label">Cơ quan yêu cầu</label>
+                    <input type="text" id="txt_coquanyeucau_mac" class="form-control" value="CÔNG AN THÀNH PHỐ HÀ NỘI">
+                </div>
+
+                <div class="form__item w-100">
+                    <label for="#" class="form__label">Công trình</label>
+                    <input type="text" id="txt_cong_trinh_mac" class="form-control"
+                        value="CƠ SỞ LÀM VIỆC PHÒNG PC64 VÀ PA72">
+                </div>
+                <div class="form__item w-100">
+                    <label for="#" class="form__label">Yêu cầu thí nghiệm</label>
+                    <input type="text" id="txt_yeu_cau_thi_nghiem_mac" class="form-control"
+                        value="Kiểm tra chất lượng thép xây dựng">
+                </div>
+                <div class="form__item w-100">
+                    <label for="#" class="form__label">Người cấp mẫu</label>
+                    <input type="text" id="txt_nguoi_cap_mau_mac" class="form-control"
+                        value="Mẫu do khách hàng yêu cầu và mang đến">
+                </div>
+
+                <button type=" button" id="btn__tieptheo_thep" class="btn text-capitalize mt-2 ml-2">Tiếp</button>
+
+            </div>
+            <!-- Module 4 Trang 2 -->
+            <div id="tn_mauthep_page_2" class="collapse">
+                <div class="form__item w-100">
+                    <label for="#" class="form__label">Loại thép(<span>*</span>)</label>
+                    <input type="text" id="cbb_loai_thep" class="form-control select__input text-uppercase">
+                    <div class="select" id="list_thep">
+                        <img src="./img/icons/angle-down-512.png" class="icon select__icon transition03s" alt="">
+                        <ul class="select__nav bg-danger transition03s">
+                            <li class="select__item text-uppercase">Thép vằn</li>
+                            <li class="select__item text-uppercase">Thép trơn</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form__item w-100">
+                    <label for="#" class="form__label">Ngày thí nghiệm</label>
+                    <input type="text" id="txt_ngay_TN_thep" class="form-control" value="20/09/2020">
+                </div>
+                <div class="d-flex">
+                    <div class="form__item w-50">
+                        <label for="#" class="form__label">Đường kính định danh(<span>*</span>)</label>
+                        <input type="text" id="cbb_duong_kinh" class="form-control select__input text-uppercase"
+                            value="20">
+                        <div class="select" id="list_duong kinh">
+                            <img src="./img/icons/angle-down-512.png" class="icon select__icon transition03s" alt="">
+                            <ul class="select__nav bg-danger transition03s">
+                                <li class="select__item text-uppercase">6</li>
+                                <li class="select__item text-uppercase">8</li>
+                                <li class="select__item text-uppercase">10</li>
+                                <li class="select__item text-uppercase">12</li>
+                                <li class="select__item text-uppercase">14</li>
+                                <li class="select__item text-uppercase">16</li>
+                                <li class="select__item text-uppercase">18</li>
+                                <li class="select__item text-uppercase">20</li>
+                                <li class="select__item text-uppercase">22</li>
+                                <li class="select__item text-uppercase">25</li>
+                                <li class="select__item text-uppercase">28</li>
+                                <li class="select__item text-uppercase">32</li>
+                                <li class="select__item text-uppercase">36</li>
+                                <li class="select__item text-uppercase">40</li>
+                                <li class="select__item text-uppercase">50</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form__item w-50">
+                        <label for="#" class="form__label">Diện tích định danh</label>
+                        <input type="text" id="txt_dien_tich_dinh_danh" class="form-control" value="314">
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="form__item w-50">
+                        <label for="#" class="form__label">Đường kính thực(<span>*</span>)</label>
+                        <input type="text" id="txt_duong_kinh_thuc" class="form-control" value="19.55">
+                    </div>
+                    <div class="form__item w-50">
+                        <label for="#" class="form__label">Diện tích thực</label>
+                        <input type="text" id="txt_dien_tich_thuc" class="form-control" value="19.55">
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="form__item w-50">
+                        <label for="#" class="form__label">Lực chảy Pc(<span>daN</span>)</label>
+                        <input type="text" id="txt_Pc" class="form-control" value="15200">
+                    </div>
+                    <div class="form__item w-50">
+                        <label for="#" class="form__label">Ứng suất Rc(<span>daN/cm</span>)</label>
+                        <input type="text" id="txt_Rc" class="form-control">
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="form__item w-50">
+                        <label for="#" class="form__label">Lực bền Pb(<span>daN</span>)</label>
+                        <input type="text" id="txt_Pb" class="form-control" value="19800">
+                    </div>
+                    <div class="form__item w-50">
+                        <label for="#" class="form__label">Ứng suất Rb(<span>daN/cm^2</span>)</label>
+                        <input type="text" id="txt_Rb" class="form-control">
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="form__item w-50">
+                        <label for="#" class="form__label">Qm(<span>g</span>)</label>
+                        <input type="text" id="txt_Qm" class="form-control" , value="2350">
+                    </div>
+                    <div class="form__item w-50">
+                        <label for="#" class="form__label">Lm(<span>mm</span>)</label>
+                        <input type="text" id="txt_Lm" class="form-control" value="1000">
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="form__item w-50">
+                        <label for="#" class="form__label">L1(<span>mm</span>)</label>
+                        <input type="text" id="txt_L1" class="form-control" value="121">
+                    </div>
+                    <div class="form__item w-50">
+                        <label for="#" class="form__label">Gtc</label>
+                        <input type="text" id="txt_Gtc" class="form-control" , value="2.47">
+                    </div>
+                </div>
+
+
+
+                <button type="button" id="btn__quaylai_thep" class="btn text-capitalize mt-2 ml-2">Quay lại</button>
+                <button type="button" id="btn__tinhtoan_thep" class="btn text-capitalize mt-2 mr-2">Tính toán</button>
+
+            </div>
+            <!-- Module 4 Trang 3 -->
+            <div id="tn_mauthep_page_3" class="collapse">
+                <h2 class="title text-capitalize wow fadeInLeft">Kết quả tính toán</h2>
+                <form action="" class="form">
+                    <div class="tablewrap">
+                        <h3 class="title title__form wow fadeInLeft" data-wow-delay="0.3s"></h3>
+                        <table class="table w-100 text-center" id="table_ketqua_4" style="width: 100%;">
+                            <tbody>
+                                <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Ký hiệu mẫu</th>
+                                        <th>Đ/k danh định(mm)</th>
+                                        <th>Đ.kính thực(mm)</th>
+                                        <th>Tiết diện thực(cm2)</th>
+                                        <th>Lực chảy Pc(daN)</th>
+                                        <th>Ứng suất Rc(daN/cm)</th>
+                                        <th>Lực bền Pb(daN)</th>
+                                        <th>Ứng suất Rb(daN/cm2)</th>
+                                        <th>Biến dạng dài epsilon(%)</th>
+                                        <th>Dung sai trọng lượng(%)</th>
+                                        <th>Mác thép</th>
+                                    </tr>
+                                </thead>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+
+                <button type="button" id="btn__export__mac" class="btn text-capitalize mt-2 ml-2">Xuất</button>
+                <button type="button" id="btn__themmoi_thep" class="btn text-capitalize mt-2 mr-2">Thêm</button>
+
+            </div>
+            <!-- Module 4 Export -->
+            <div id="tn_mauthep_export" class="collapse">
+                <div id="main_report_mauthep">
+                    <table style="width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td colspan="3" style="width: 99.8837%;">
+                                    <p style="text-align: center;"><strong><span
+                                                style="font-family: Arial,Helvetica,sans-serif;">VIỆN KỸ THUẬT
+                                                C&Ocirc;NG TR&Igrave;NH X&Acirc;Y DỰNG, TRƯỜNG ĐẠI HỌC X&Acirc;Y
+                                                DỰNG</span></strong></p>
+                                    <p style="text-align: center;"><strong><span
+                                                style="font-family: Arial,Helvetica,sans-serif;">PH&Ograve;NG TH&Iacute;
+                                                NGHIỆM V&Agrave; KIỂM ĐỊNH C&Ocirc;NG TR&Igrave;NH
+                                                LAS-XD.125</span></strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 19.8837%;">
+                                    <div style="text-align: center;">Số: 00-00-A</div>
+                                </td>
+                                <td style="width: 62.093%;">
+                                    <h4 style="text-align: center; word-wrap:normal"><strong>KẾT QUẢ THÍ NGHIỆM MẪU THÉP
+                                            THANH</strong></h3>
+                                </td>
+                                <td style="width: 18.0233%; text-align: center;">
+                                    <div style="text-align: center;">Ng&agrave;y th&iacute; nghiệm</div>
+                                    <p id="ngayThiNghiem_mauthep"></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br><br />
+                    <table class="no-border" style="width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td style="width: 24.186%; vertical-align: top;">Số
+                                </td>
+                                <td style="width: 75.6977%; vertical-align: top;"><span id="so_mauthep"></span></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 24.186%; vertical-align: top;">Cơ quan y&ecirc;u cầu &nbsp; &nbsp;
+                                </td>
+                                <td style="width: 75.6977%; vertical-align: top;"><span id="tenCoQuan_mauthep"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 24.186%; vertical-align: top;">Công trình</td>
+                                <td style="width: 75.6977%; vertical-align: top;"><span id="congtrinh_mauthep"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 24.186%; vertical-align: top;">Yêu cầu thí nghiệm</td>
+                                <td style="width: 75.6977%; vertical-align: top;"><span
+                                        id="yeucauthinghiem_mauthep"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 24.186%; vertical-align: top;">Người cấp mẫu</td>
+                                <td style="width: 75.6977%; vertical-align: top;"><span id="nguoicapmau_mauthep"></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br />
+                    <table id="table_export_mauthep_1" style="width: 100%;" class="table w-100 text-center no-padding">
+                        <tbody>
+                            <thead>
+                                <tr>
+                                    <th class="table__header text-capitalize">STT</th>
+                                    <th class="table__header text-capitalize">Ký <br/>hiệu<br/>mẫu</th>
+                                    <th class="table__header text-capitalize">Đ/k<br/>danh<br/>định<br/>(mm)</th>
+                                    <th class="table__header text-capitalize">Đ.kính<br/>thực<br/>(mm)</th>
+                                    <th class="table__header text-capitalize">Tiết<br/>diện<br/>thực<br/>(cm2)</th>
+                                    <th class="table__header text-capitalize">Lực<br/>chảy<br/>Pc<br/>(daN)</th>
+                                    <th class="table__header text-capitalize">Ứng<br/>suất<br/>Rc<br/>daN/cm)</th>
+                                    <th class="table__header text-capitalize">Lực<br/>bền<br/>Pb<br/>(daN)</th>
+                                    <th class="table__header text-capitalize">Ứng<br/>suất<br/>Rb<br/>(daN/cm2)</th>
+                                    <th class="table__header text-capitalize">Biến<br/>dạng<br/>dài<br/>epsilon<br/>(%)</th>
+                                    <th class="table__header text-capitalize">Dung<br/>sai<br/>trọng<br/>lượng<br/>(%)</th>
+                                    <th class="table__header text-capitalize">Mác<br/>thép</th>
+                                </tr>
+                            </thead>
+                        </tbody>
+                    </table>
+                    <br />
+                    <div class="form__item w-100">
+                        <p>Kết luận: Theo TCVN 1651:2 2 - 2018</p>
+                    </div>
+                    <table id="table_mauthep_ketluan" style="width: 100%;" class="no-border">
+                    </table>
+                    <br />
+                    <table class="no-border" style="width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td style="width: 25%; text-align: center;font-size:2vw;vertical-align: top;">TRƯỞNG
+                                    PH&Ograve;NG TN&nbsp;</td>
+                                <td style="width: 25%; text-align: center;font-size:2vw;vertical-align: top;">NGƯỜI
+                                    TH&Iacute; NGHIỆM</td>
+                                <td style="width: 25%; text-align: center;font-size:2vw;vertical-align: top;">NGƯỜI KIỂM
+                                    TRA</td>
+                                <td style="width: 25%; text-align: center;font-size:2vw;vertical-align: top;">VIỆN
+                                    TRƯỞNG</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br />
+                    <br />
+                    <br />
+                </div>
+                <div>
+                    <button type="button" id="btn__print_mauthep" class="btn text-capitalize mt-2 mr-2">In Ấn</button>
+                    <button type="button" id="btn__print_back_mauthep" class="btn text-capitalize mt-2 mr-2">Quay
+                        lại</button>
+                </div>
+            </div>            
+        </div>    
+        
+        <!-- Footer Trang chủ - Tính toán-->
+        <footer class="footer fixed-bottom">
+            <ul class="footer__nav d-flex">
+                <li class="footer__item">
+                    <a href="#" class="footer__link d-block text-center text-capitalize" id="trangchu">trang chủ</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link d-block text-center text-capitalize disabled" id="nhaplieu">tính
+                        toán</a>
+                </li>                
+            </ul>
+        </footer>
+
+    </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/dulieudauvao.js"></script>
+    <script src="./js/tinhtoan.js"></script>
+    <!-- <script src="./js/svg.min.js"></script> -->
+    <!-- <script src='https://unpkg.com/panzoom@8.7.3/dist/panzoom.min.js'></script> -->
+    <script src="./js/ve.js"></script>
+    <script src="./js/functions.js"></script>
+    <script>
+        function myfunction() {
+            console.log("an mai");
+        }
+    </script>
+</body>
+
+</html>

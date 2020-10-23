@@ -1,0 +1,255 @@
+.main {
+    padding: 83px 0 80px;
+    z-index: -9999;
+}
+
+.main .title {
+    position: relative;
+    display: inline-block;
+}
+
+.main .title .icon {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: calc(50% - 4px);
+    left: 65px;
+}
+
+.main .title::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
+
+.main .nhaplieu__standardbase {
+    position: relative;
+    width: 40px;
+    height: 15px;
+    margin-top: 5px;
+    border-radius: 20px;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5) inset;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.main .nhaplieu__standardbase::after {
+    position: absolute;
+    content: '';
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #192a80;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
+    transition: inherit;
+}
+
+.main .nhaplieu__standardbase::before {
+    position: absolute;
+    content: '';
+    border-radius: 20px;
+    background-color: #192a80;
+    opacity: 0.9;
+    right: 0;
+    top: 0;
+    left: 100%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.main .nhaplieu__standardbase.active {
+    background-color: transparent;
+}
+
+.main .nhaplieu__standardbase.active::after {
+    left: 10px;
+}
+
+.main .nhaplieu__standardbase.active::before {
+    left: 0;
+    opacity: 1;
+}
+
+.main .trangchu__intro {
+    font-size: 14px;
+    position: relative;
+}
+
+.main .trangchu__caption {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    color: #192a80;
+}
+
+.main .trangchu .content {
+    margin-top: 30px;
+    color: #192a80;
+}
+
+.main .trangchu .content__item {
+    color: inherit;
+    font-weight: bold;
+}
+
+.main .ketqua .title {
+    margin-top: 0;
+}
+
+.main .cosolythuyet {
+    position: fixed;
+    padding: 16px 20px;
+    overflow-y: scroll;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 70%;
+    width: 70%;
+    background-color: #fff;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.8);
+    z-index: 999999;
+}
+
+.main .cosolythuyet__content {
+    margin-top: 10px;
+}
+
+.main .cosolythuyet__close::after,
+.main .cosolythuyet__close::before {
+    background-color: #000000;
+}
+
+.main .baocao .tablewrap {
+    margin-top: 20px;
+}
+
+.main .cosolythuyet::-webkit-scrollbar {
+    display: none;
+}
+
+.form {
+    padding: 0 25px;
+    margin-top: 26px;
+}
+
+.form__wrap {
+    margin: 7px -7px 0;
+}
+
+.form__item {
+    padding: 0 7px;
+}
+
+.form__item .form-control {
+    border-radius: 5px;
+    height: 35px;
+}
+
+.form__item .form-control[readonly] {
+    background-color: transparent;
+}
+
+.form__label {
+    color: #192a80;
+    margin: 0 0 4px 0;
+}
+
+.form__label span {
+    color: #770000;
+}
+
+.form__view {
+    width: 100%;
+    height: 300px;
+    border: solid 1px #192a80;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.form .svg__wrap {
+    position: relative;
+    width: 295px;
+    height: 300px;
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+.form .svg__rotate90 svg {
+    transform: rotate(-90deg);
+}
+
+.form .form-control:disabled,
+.form .form-control[readonly] {
+    background-color: transparent;
+}
+
+.select {
+    position: relative;
+}
+
+.select__nav {
+    position: absolute;
+    top: 20px;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    list-style-type: none;
+    padding: 5px 10px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.select__icon {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    top: -17px;
+    right: -15px;
+}
+
+.select.active .select__nav {
+    top: 5px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.select.active .select__icon {
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.tablewrap {
+    overflow-x: scroll;
+}
+
+.tablewrap .title {
+    color: #192a80;
+}
+
+.tablewrap .title span {
+    color: #770000;
+}
+
+.tablewrap .table {
+    padding: 0 25px;
+    color: #000;
+    overflow: auto;
+}
+
+.tablewrap .table__header,
+.tablewrap .table th,
+.tablewrap .table td {
+    color: #192a80;
+    border: solid 1px #770000;
+}
+
+/*# sourceMappingURL=main.css.map */

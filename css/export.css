@@ -1,0 +1,31 @@
+body {
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-size: 3vw;
+    transition: 0.3s;
+    
+    height: 100%;
+    width: 100%;
+
+}
+#report {
+    border: 1px solid black;
+    width: 96vw;
+}
+
+table {
+    border-collapse: collapse;
+}
+  
+table, th, td {
+    border: 1px solid black;
+}
+
+table.no-border {
+            border: none
+    
+}
+table.no-border  td {
+    border: none !important
+
+}
